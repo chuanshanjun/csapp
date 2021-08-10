@@ -47,6 +47,22 @@ int main()
     // p2.7 输出 61 62 63 64 65 66
     const char *s = "abcdef";
     show_bytes((byte_pointer)s, strlen(s));
+
+    // p2.12
+    int x;
+    x = 0x87654321;
+    
+    // x的最低有效字节,其余位置均置为0 [0x00000021]
+    show_int(x&0xFF);
+
+    // 除了x的最低有效字节外,其他的位都取补, 最低有效字节保持不变 [0x789ABC21]
+    show_int((~x)^0xFF);
+
+    // x的最低有效字节设置成全1,其他字节保持不变 [0x876543FF]
+    show_int(x|0xFF);
+
+    // p2.13 见 p2-13.c
+    // bis 位设置  |1   bic 位清除 |0
 }
 
 void show_bytes(byte_pointer start, size_t len)
