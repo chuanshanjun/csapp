@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <limits.h>
 
 typedef unsigned char *byte_pointer;
 
@@ -35,7 +36,7 @@ int main()
     // 0100 1010 0101 0110 0100 0101 0000 0100
     float fnval = (float)nval;
 
-    // 移动2位,有20位相匹配,浮点数的前9位后2位不匹配
+    // 移动2位,有21位相匹配,浮点数的前9位后2位不匹配
     // 00000000001101011001000101000001
     //   01001010010101100100010100000100
     show_int(nval);
