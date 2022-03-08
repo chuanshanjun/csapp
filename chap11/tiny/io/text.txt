@@ -1,0 +1,11 @@
+GET / HTTP/1.1
+User-Agent: curl/7.68.0
+Accept: */*
+young: name
+child process end
+filename = ./hellofile/hello
+Hello World!child process end
+filename = ./hellofile/hello
+Hello World!child process end
+filename = ./hellofile/hello
+Hello World!
