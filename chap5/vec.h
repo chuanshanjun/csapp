@@ -1,4 +1,4 @@
-typedef long data_t;
+typedef double data_t;
 
 /* Create abstract data type for vector */
 typedef struct {
