@@ -24,3 +24,13 @@ void merge2(long src1[], long src2[], long dest[], long n) {
         i2 += (1-take1);
     }
 }
+
+void merge(long src1[], long src[], long dest[], long n) {
+    long i1 = 0;
+    long i2 = 0;
+    long id = 0;
+    while (i1 < n && i2 < n) {
+        long result = src1[i1] < src[i2];
+        
+    }
+}
