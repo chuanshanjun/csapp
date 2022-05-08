@@ -96,13 +96,13 @@ void Strpp() {
     char *str2 = "DEF"; 
 
     for (i = 0; i < strlen(str1); i++) {
-        printf("str[i] = %c, ptr = %p\n", str1[i], &str1);
+        printf("str[%d] = %c, ptr = %p\n", i, str1[i], &str1);
     }
 
     printf("------\n");
 
     for (i = 0; i < strlen(str1); i++) {
-        printf("str[i] = %c, ptr = %p\n", str1[i], &str1[i]);
+        printf("str[%d] = %c, ptr = %p\n", i, str1[i], &str1[i]);
     }
 
     printf("------\n");
@@ -111,9 +111,9 @@ void Strpp() {
 
     printf("str2=%s\n", str2);
 
-    printf("*str2=%c ptr=%p\n", *str2, &str2);
+    printf("*str2=%c ptr=%p\n", *str2, str2);
 
-    printf("str2++=%c ptr=%p\n", *(str2++), (str2++));
+    printf("str2++=%c ptr=%p\n", *(str2++), str2);
 
 }
 
@@ -195,6 +195,9 @@ int parseline(char *buf, char **argv) {
 }
 
 int main() {
+    // Strpp();
+    // Pointerpp();
+    // StrPointerpp();
     int maxl = 16;
 
     int *argv[1024];
